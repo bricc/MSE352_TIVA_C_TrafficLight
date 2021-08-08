@@ -12,3 +12,11 @@ The description of the problem is as followed, the initial state of the traffic 
 
 
 The assembly code implemented for the project was simple. The principle of using timers and interrupts were the groups option to achieve the desired characteristics of the circuit. The complete code will be attached along with this report for submission. In the main function, aside from enabling the GPIO pins for input and output (in-built led lights and pins for external leds), the timer of the microcontroller was also activated. In particular, 3 different timers were activated. Two of these three timers function the same- that is, they blink the in-built led of the microcontroller every second (i.e. with a frequency of 1 Hz). On the other hand, the third timer, aside from blinking the in-built led of the board, also blinks the external led (i.e. the yellow light for the pedestrian lane). The only difference between these timers is the color- it will be seen in the video that for different states, the in-built led for the board blinks with a different light. 
+
+## Summary of the code
+The code is divided into 4 parts- the main code and three void functions in charge in making the lights of the microcontroller blink. In the main part of the code, GPIOs and timers were activated and the variables associated with the timer are also defined. Inside this main function, a while loop is implemented- this while loop contains the main part of the system. As seen in the figure below, there are 5 states, each has different color of lights for the pedestrian and the highway lane. 
+
+The algorithm for this is simple, enable the timer, enable the pins connected to the associated external led, delay so that the light will light up for a desired amount of time, and disable the associated timer. Overall, this algorithm is a simple yet it’s still a straightforward approach to tackle the problem presented.
+
+
+![alt text](https://github.com//[reponame]/blob/[branch]/image.jpg?raw=true)
