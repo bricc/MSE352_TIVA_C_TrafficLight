@@ -19,4 +19,4 @@ The code is divided into 4 parts- the main code and three void functions in char
 The algorithm for this is simple, enable the timer, enable the pins connected to the associated external led, delay so that the light will light up for a desired amount of time, and disable the associated timer. Overall, this algorithm is a simple yet it’s still a straightforward approach to tackle the problem presented.
 
 
-![](https://github.com/bricc/MSE352_TIVA_C_TrafficLight/blob/master/StateDiagram_.JPG)
+![](https://github.com/bricc/MSE352_TIVA_C_TrafficLight/blob/master/StateDiagram_.JPG){ width="800" height="600" style="display: block; margin: 0 auto" }
